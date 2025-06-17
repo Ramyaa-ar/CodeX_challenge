@@ -97,3 +97,14 @@ There are mainly 3 data streams : stdin,stdout and stderr.
 | `2>` | Redirect stderr | `cat nofile 2> error.txt` | Saves error message to `error.txt` |
 | `2>&1` | Merge stderr into stdout | `command > out.txt 2>&1` | Combines both outputs in one file |
 ---
+## Permissins Control
+| Command | Description | Example | Output |
+|---------|-------------|---------|--------|
+| `ls -l` | List files with permissions | `ls -l file.txt` | `-rw-r--r-- 1 user user 1234 date file.txt` |
+|`chmod u+x <file>`| Adds executable permission to file | `chmod u+x myfile` | Adds x as well in permissions |
+| `chmod u-x <file>`| Removes executable permission from the file | `chmod u-x myfile` | Removes x from permissions |
+| `chmod 755 <file>` | Set permissions to `rwxr-xr-x` | `chmod 755 app` | `-rwxr-xr-x` |
+| `chown user <file>` | Change file owner | `chown ramya notes.txt` | Ownership changed to `ramya` |
+| `chown user:group <file>` | Change file owner and group | `chown ramya:dev script.sh` | Owner and group updated |
+| `ls -ld <dir>` | View permissions of a directory | `ls -ld myfolder` | `drwxr-xr-x 2 ramya ramya ... myfolder` |
+---
