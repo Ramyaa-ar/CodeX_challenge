@@ -76,3 +76,24 @@ in general `-i` flags always prompts us before overwriting, deleting etc and we 
 For `grep` command , we can use flags like:
 * `-i`: for making words searching to be case-insensitive.
 ---
+
+## Input and Output
+There are mainly 3 data streams : stdin,stdout and stderr.
+| Stream | Name | Description | 
+|--------|------|-------------|
+| `stdin` | Standard Input | Takes input from keyboard or another command | 
+| `stdout` | Standard Output | Displays output (usually to terminal) | 
+| `stderr` | Standard Error | Displays error messages |
+
+
+
+###  Redirection Operators
+
+| Symbol | Purpose | Example | Meaning |
+|--------|---------|---------|---------|
+| `>` | Redirect stdout to a file | `echo Hello,World > files.txt` | Saves Hello,World  to `files.txt` |
+| `>>` | Append stdout to file | `echo "log" >> log.txt` | Appends log to file instead of overwriting |
+| `<` | Redirect file to stdin | `wc -l < file.txt` | Sends word count,content of `file.txt` as input |
+| `2>` | Redirect stderr | `cat nofile 2> error.txt` | Saves error message to `error.txt` |
+| `2>&1` | Merge stderr into stdout | `command > out.txt 2>&1` | Combines both outputs in one file |
+---
