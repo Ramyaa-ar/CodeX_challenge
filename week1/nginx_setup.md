@@ -1,9 +1,7 @@
 # NGINX Installation and Testing
 
 ## Step 1: Update Packages
-```bash
 sudo apt update
-
 ## Step 2: Install nginx
 
 sudo apt install nginx -y
