@@ -1,0 +1,1 @@
+Ollama is a tool that allows you to run open-source large language models locally on your own machine. By running LLMs locally, you can avoid API costs and have full control over your data privacy. Ollama supports various models like Llama2, Mistral, and Phi.
