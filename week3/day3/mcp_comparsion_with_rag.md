@@ -26,12 +26,11 @@
 
 ---
 
-### 3. Main benefit
+### 3. Response Stability
+MCP:
+Tends to provide more stable and consistent responses (since it uses predefined context).So that it is great for personal assistants, conversational bots, or any scenario needing personalization.
 
-- **MCP**:  
-  Enables **personalization, continuity, and dynamic instruction-following** in conversations or tasks.
-
-- **RAG**:  
-  Provides **more accurate, up-to-date, and factual responses**, especially for knowledge-intensive queries.
+RAG:
+Responses can vary depending on what is retrieved (if sources change or update, answers might change), particularly ideal for knowledge-based QA systems, document-based chatbots, technical support, or research assistants.
 
 ---
