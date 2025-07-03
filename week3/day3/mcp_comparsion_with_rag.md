@@ -34,4 +34,4 @@
 - **RAG**:  
   Provides **more accurate, up-to-date, and factual responses**, especially for knowledge-intensive queries.
 
-  ---
+---
